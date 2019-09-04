@@ -37,8 +37,8 @@ RenderSettings:
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 748766607}
-  m_IndirectSpecularColor: {r: 0.63482624, g: 0.6614839, b: 0.7015167, a: 1}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -118,7 +118,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh28434
+  m_Name: pb_Mesh14590
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -533,6 +533,8 @@ GameObject:
   - component: {fileID: 177547747}
   - component: {fileID: 177547746}
   - component: {fileID: 177547745}
+  - component: {fileID: 177547748}
+  - component: {fileID: 177547749}
   m_Layer: 0
   m_Name: pirate ship door platform
   m_TagString: Untagged
@@ -587,6 +589,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &177547748
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 177547744}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0241274, y: 11.754728, z: 1.0123045}
+  m_Center: {x: 0.012065051, y: -4.0413074, z: 0.006151994}
+--- !u!114 &177547749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 177547744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 794274ff0c609437ca28d9f7b52e9dc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 177547745}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 256
+  enterTriggerName: Enter
+  exitTriggerName: Exit
+  occupiedBoolName: Occupied
 --- !u!1 &277592407
 GameObject:
   m_ObjectHideFlags: 0
@@ -2305,7 +2337,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 683432347}
   m_LocalRotation: {x: -0.040235516, y: 0.041975096, z: 0.69228995, w: 0.7192732}
-  m_LocalPosition: {x: 0.008, y: 8, z: -1.08}
+  m_LocalPosition: {x: 0.809, y: 7, z: -1.08}
   m_LocalScale: {x: 2.7441368, y: 1.2917671, z: 3.1830976}
   m_Children: []
   m_Father: {fileID: 768513775}
@@ -2883,7 +2915,7 @@ GameObject:
   - component: {fileID: 768513775}
   - component: {fileID: 768513774}
   - component: {fileID: 768513777}
-  - component: {fileID: 768513776}
+  - component: {fileID: 768513778}
   m_Layer: 0
   m_Name: pirate front door
   m_TagString: Untagged
@@ -2913,31 +2945,13 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 768513773}
   m_LocalRotation: {x: 0.03487288, y: -0.045769658, z: -0.7648777, w: 0.6416005}
-  m_LocalPosition: {x: 107, y: 53, z: 341}
+  m_LocalPosition: {x: 110.2, y: 70.9, z: 340.9}
   m_LocalScale: {x: 24.763638, y: 0.75385, z: 13.525266}
   m_Children:
   - {fileID: 683432348}
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: -1.4480001, y: -6.4370003, z: -99.937004}
---- !u!114 &768513776
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 768513773}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c288e75d5f4d74fc6af59be0dccbaab8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 683432349}
-  lookAtTriggerName: LookAt
-  lookAwayTriggerName: LookAway
-  lookingAtBoolName: LookingAt
-  mouseDownTriggerName: MouseDown
-  mouseUpTriggerName: MouseUp
-  mouseDragBoolName: MouseDrag
 --- !u!95 &768513777
 Animator:
   serializedVersion: 3
@@ -2956,6 +2970,40 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!59 &768513778
+HingeJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 768513773}
+  m_ConnectedBody: {fileID: 0}
+  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Axis: {x: 1, y: 0, z: 8}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: 110.2, y: 70.9, z: 340.9}
+  m_UseSpring: 0
+  m_Spring:
+    spring: 0
+    damper: 0
+    targetPosition: 0
+  m_UseMotor: 0
+  m_Motor:
+    targetVelocity: 0
+    force: 0
+    freeSpin: 0
+  m_UseLimits: 0
+  m_Limits:
+    min: 0
+    max: 0
+    bounciness: 0
+    bounceMinVelocity: 0.2
+    contactDistance: 0
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!1 &799845792
 GameObject:
   m_ObjectHideFlags: 0
@@ -4281,16 +4329,16 @@ Camera:
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0
+    x: 0.6
     y: 0
-    width: 1
-    height: 1
+    width: 0.4
+    height: 0.4
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 29.5
   orthographic: 1
   orthographic size: 258.9942
-  m_Depth: 0
+  m_Depth: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 23
@@ -15908,7 +15956,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 329.84045
+      value: 212
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalPosition.y
@@ -15916,7 +15964,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 297.32446
+      value: 333.8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalRotation.x
@@ -15937,6 +15985,14 @@ Prefab:
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
