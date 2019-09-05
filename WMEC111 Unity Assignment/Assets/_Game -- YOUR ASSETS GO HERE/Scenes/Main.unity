@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -587,7 +587,7 @@ Transform:
   m_Children:
   - {fileID: 1805852016}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &177547748
 BoxCollider:
@@ -1805,7 +1805,7 @@ Transform:
   m_LocalScale: {x: 7.8067985, y: 11.56679, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: -73.600006, z: 0}
 --- !u!1 &531251313
 GameObject:
@@ -1884,7 +1884,7 @@ Transform:
   m_LocalScale: {x: 29.295378, y: 0.75384986, z: 32.082256}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &578571149
 Mesh:
@@ -2903,7 +2903,7 @@ Transform:
   m_Children:
   - {fileID: 683432348}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: -1.4480001, y: -6.4370003, z: -99.937004}
 --- !u!95 &768513777
 Animator:
@@ -4011,6 +4011,9 @@ Transform:
   - {fileID: 2143957503}
   - {fileID: 634144250}
   - {fileID: 2031771237}
+  - {fileID: 1685102910}
+  - {fileID: 1989136737}
+  - {fileID: 1185147497}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4026,7 +4029,7 @@ GameObject:
   - component: {fileID: 1185147495}
   - component: {fileID: 1185147494}
   m_Layer: 0
-  m_Name: Cube (2)
+  m_Name: ship top 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4093,11 +4096,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1185147493}
   m_LocalRotation: {x: -0.020078873, y: -0, z: -0, w: 0.9997984}
-  m_LocalPosition: {x: 54.57, y: 67.11, z: 232.83}
-  m_LocalScale: {x: 44.59014, y: 2.895918, z: 90.110985}
+  m_LocalPosition: {x: 348.66006, y: 131.32516, z: -318.95575}
+  m_LocalScale: {x: 44.59014, y: 2.895918, z: 90.11097}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_Father: {fileID: 1091791386}
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: -2.301, y: 0, z: 0}
 --- !u!1 &1195780718
 GameObject:
@@ -4111,7 +4114,7 @@ GameObject:
   - component: {fileID: 1195780721}
   - component: {fileID: 1195780720}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4260,7 +4263,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1225719491
 GameObject:
@@ -4306,7 +4309,7 @@ Transform:
   m_Children:
   - {fileID: 1195780719}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!195 &1225719494
 NavMeshAgent:
@@ -4851,7 +4854,7 @@ Transform:
   m_LocalScale: {x: 61.689728, y: 93.257034, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: -0.19100001, y: -223.803, z: 0.333}
 --- !u!1 &1685102906
 GameObject:
@@ -4865,7 +4868,7 @@ GameObject:
   - component: {fileID: 1685102908}
   - component: {fileID: 1685102907}
   m_Layer: 0
-  m_Name: Cylinder
+  m_Name: Sail mast
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4932,12 +4935,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1685102906}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 76.5, y: 109.26, z: 381.6}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 370.59006, y: 173.47516, z: -170.18576}
   m_LocalScale: {x: 4.0558, y: 35.14095, z: 2.674}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_Father: {fileID: 1091791386}
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1702453629
 Prefab:
@@ -14733,7 +14736,7 @@ GameObject:
   - component: {fileID: 1989136739}
   - component: {fileID: 1989136738}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: ship top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14800,11 +14803,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1989136733}
   m_LocalRotation: {x: -0.020078873, y: -0, z: -0, w: 0.9997984}
-  m_LocalPosition: {x: 70.2, y: 72.53, z: 410.83}
+  m_LocalPosition: {x: 364.29004, y: 136.74515, z: -140.95578}
   m_LocalScale: {x: 84.13235, y: 5.3857, z: 266.6006}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_Father: {fileID: 1091791386}
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: -2.301, y: 0, z: 0}
 --- !u!54 &1989136738
 Rigidbody:
@@ -14882,7 +14885,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &2026600725
 Mesh:
